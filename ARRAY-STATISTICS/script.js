@@ -1,42 +1,27 @@
-console.log("hello javscript");
+function arrayStatistics(arr) {
+    let sum = 0;
+    let average = 0;
+    let min = arr[0]
+    let max = arr[0]
 
-function capitalizeFirstLetter(string) {
-    string = string[0].toUpperCase() + string.slice(-1)
-    return string
-}
-
-function findLetterinAString(string, letter){
-    const indexes = []
-    for (let i = 0; i < string.length; i++) {
-        if (string[i] === letter.toLowerCase()) {
-            indexes.push(i)
+    for(let i = 0; i < arr.length; i++) {
+        sum+=arr[i];
+        if(arr[i]< min){
+            min = arr[i];
+        }
+        if(arr[i]> max){
+            max = arr[i];
         }
     }
+    average = sum / arr.length;
 
-    if (indexes.length === 0) {
-        return `The letter '${letter}' is not found in "${string}".`
+    return {
+        sum: sum,
+        avarage: average,
+        min: min,
+        max: max
     }
-
-    return `The letter '${letter}' is found ${indexes.length} time(s) at index(es): ${indexes.join(", ")}.`
 }
 
 
-function findNumberInArray(array, number){
-    const indexes = []
-    for(let i = 0 ; i <array.length; i++){
-        if(array[i] === number){
-            indexes.push(i)
-        }
-    }
-
-    if(indexes.length === 0){
-        return `The number ${number} is not found in the array.`
-    }
-
-    return `the number ${number} is found ${indexes.length} time(s) at ${indexes.join(",")}`
-}
-
-console.log(capitalizeFirstLetter("hello "));
-console.log(capitalizeFirstLetter("honore "));
-console.log(findLetterinAString("hello world7","O"))
-console.log(findNumberInArray([1, 2, 3, 4, 5], 3))
+console.log(arrayStatistics([1, 2, 3, 4, 5]));
