@@ -24,4 +24,7 @@ function arrayStatistics(arr) {
 }
 
 
+
+
+
 console.log(arrayStatistics([1, 2, 3, 4, 5]));

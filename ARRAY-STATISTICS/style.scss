@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.btn{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-animate{
+    animation: animateBtn 0.5s ease-in-out 1 normal both;
+}
+@keyframes animateBtn {
+    0% , 100%{ transform: scale(1); background: #007bff; color: white; }
+    50% { transform: scale(1.2); background: green; color: whitesmoke; }
+}
