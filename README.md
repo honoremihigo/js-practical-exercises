@@ -15,14 +15,14 @@ Returns: an object {sum, average, min, max}
 
 # 2. BMI calculation
 
-this is a kata where you make a function where you passs the weight and the height of someone and then it give you response in these options ["overweight", "normal","underweight","obese"]which can help you to know where you are on your health
+this is a kata where you make a function where you passs the weight and the height of someone and then it give you response in these options ["overweight", "normal","underweight","obese"]which can help you to know where you are on your health(8kyu)
 
 
 # 3. Who likes it?
 
 You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
 
-Implement the function which takes an array containing the names of people that like an item. It must return the display text as shown in the examples:
+Implement the function which takes an array containing the names of people that like an item. It must return the display text as shown in the examples(6kyu):
 
 []                                -->  "no one likes this"
 ["Peter"]                         -->  "Peter likes this"
@@ -33,4 +33,8 @@ Note: For 4 or more names, the number in "and 2 others" simply increases.
 
 # 4. IsPrime
 
-i made a function which recieves a number and them check if it is a prime number
+i made a function which recieves a number and them check if it is a prime number(6kyu)
+
+# 5.area of circle
+
+I made a Function for finding an area of circle when you pass radius as an argument and check if the number of radius is a greater than or equal to zero and it throw an error if not it will find area of circle(7kyu)
