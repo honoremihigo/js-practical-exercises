@@ -98,3 +98,13 @@ We can assume any number being passed in will be valid whole number.
 Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.(6kyu)
 
 Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case
+
+# 10. Reversed Words
+
+Complete the solution so that it reverses all of the words within the string passed in.
+
+Words are separated by exactly one space and there are no leading or trailing spaces.
+
+Example(Input --> Output):
+
+"The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
